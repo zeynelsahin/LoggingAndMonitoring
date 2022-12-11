@@ -10,3 +10,6 @@ C:\Users\zeynels\Desktop\Git Project\Logging\CarvedRock.Domain\obj\Debug\net6.0\
 C:\Users\zeynels\Desktop\Git Project\Logging\CarvedRock.Domain\obj\Debug\net6.0\refint\CarvedRock.Domain.dll
 C:\Users\zeynels\Desktop\Git Project\Logging\CarvedRock.Domain\obj\Debug\net6.0\CarvedRock.Domain.pdb
 C:\Users\zeynels\Desktop\Git Project\Logging\CarvedRock.Domain\obj\Debug\net6.0\ref\CarvedRock.Domain.dll
+C:\Users\zeynels\Desktop\Git Project\Logging\CarvedRock.Domain\bin\Debug\net6.0\CarvedRock.Data.dll
+C:\Users\zeynels\Desktop\Git Project\Logging\CarvedRock.Domain\bin\Debug\net6.0\CarvedRock.Data.pdb
+C:\Users\zeynels\Desktop\Git Project\Logging\CarvedRock.Domain\obj\Debug\net6.0\CarvedRock.Domain.csproj.CopyComplete
