@@ -1,0 +1,12 @@
+C:\Users\zeynels\Desktop\Git Project\Logging\CarvedRock.Domain\bin\Debug\net6.0\CarvedRock.Domain.deps.json
+C:\Users\zeynels\Desktop\Git Project\Logging\CarvedRock.Domain\bin\Debug\net6.0\CarvedRock.Domain.dll
+C:\Users\zeynels\Desktop\Git Project\Logging\CarvedRock.Domain\bin\Debug\net6.0\CarvedRock.Domain.pdb
+C:\Users\zeynels\Desktop\Git Project\Logging\CarvedRock.Domain\obj\Debug\net6.0\CarvedRock.Domain.csproj.AssemblyReference.cache
+C:\Users\zeynels\Desktop\Git Project\Logging\CarvedRock.Domain\obj\Debug\net6.0\CarvedRock.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zeynels\Desktop\Git Project\Logging\CarvedRock.Domain\obj\Debug\net6.0\CarvedRock.Domain.AssemblyInfoInputs.cache
+C:\Users\zeynels\Desktop\Git Project\Logging\CarvedRock.Domain\obj\Debug\net6.0\CarvedRock.Domain.AssemblyInfo.cs
+C:\Users\zeynels\Desktop\Git Project\Logging\CarvedRock.Domain\obj\Debug\net6.0\CarvedRock.Domain.csproj.CoreCompileInputs.cache
+C:\Users\zeynels\Desktop\Git Project\Logging\CarvedRock.Domain\obj\Debug\net6.0\CarvedRock.Domain.dll
+C:\Users\zeynels\Desktop\Git Project\Logging\CarvedRock.Domain\obj\Debug\net6.0\refint\CarvedRock.Domain.dll
+C:\Users\zeynels\Desktop\Git Project\Logging\CarvedRock.Domain\obj\Debug\net6.0\CarvedRock.Domain.pdb
+C:\Users\zeynels\Desktop\Git Project\Logging\CarvedRock.Domain\obj\Debug\net6.0\ref\CarvedRock.Domain.dll

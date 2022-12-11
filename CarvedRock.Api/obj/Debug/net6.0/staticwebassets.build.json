@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "dLAdiFylQAIDA+a90bUlK3y9NVcWL0VOhYsLKwY6TCM=",
+  "Source": "CarvedRock.Api",
+  "BasePath": "_content/CarvedRock.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
