@@ -5,10 +5,10 @@ using Microsoft.Extensions.Logging;
 
 namespace CarvedRock.Data
 {
-    public class CarvedRockRepository :ICarvedRockRepository
+    public class CarvedRockRepository : ICarvedRockRepository
     {
         private readonly LocalContext _ctx;
-        private readonly ILogger<CarvedRockRepository> _logger;        
+        private readonly ILogger<CarvedRockRepository> _logger;
         private readonly ILogger _factoryLogger;
 
         public CarvedRockRepository(LocalContext ctx, ILogger<CarvedRockRepository> logger,
@@ -18,6 +18,7 @@ namespace CarvedRock.Data
             _logger = logger;
             _factoryLogger = loggerFactory.CreateLogger("DataAccessLayer");
         }
+
         public async Task<List<Product>> GetProductsAsync(string category)
         {
             _logger.LogInformation("Getting products in repository for {category}", category);
@@ -36,15 +37,15 @@ namespace CarvedRock.Data
 
         public Product? GetProductById(int id)
         {
-            var timer = new Stopwatch();  
-            timer.Start();          
+            var timer = new Stopwatch();
+            timer.Start();
             var product = _ctx.Products.Find(id);
             timer.Stop();
 
-            _logger.LogDebug("Querying products for {id} finished in {milliseconds} milliseconds", 
-                id, timer.ElapsedMilliseconds);	 
-
+            _logger.LogDebug("Querying products for {id} finished in {milliseconds} milliseconds",
+                id, timer.ElapsedMilliseconds);
+            _factoryLogger.LogInformation("(F) Querying products for {id} finished in {ticks}", id, timer.ElapsedTicks);
             return product;
-        }       
+        }
     }
 }

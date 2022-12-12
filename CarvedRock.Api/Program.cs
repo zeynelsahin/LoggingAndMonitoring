@@ -33,6 +33,7 @@ if (app.Environment.IsDevelopment())
 app.MapFallback(() => Results.Redirect("/swagger"));
 
 app.UseHttpsRedirection();
+app.UseRouting();
 
 app.UseAuthorization();
 
