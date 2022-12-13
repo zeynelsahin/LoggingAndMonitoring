@@ -1,10 +1,16 @@
+using System.Diagnostics;
 using CarvedRock.Data;
 using CarvedRock.Domain;
 var builder = WebApplication.CreateBuilder(args);
-
+builder.Logging.AddFilter("CarvedRock", LogLevel.Debug);
+// var path = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+// var tracePath = Path.Join(path, $"Log_CarvedRock_{DateTime.Now:yyyyMMdd-HHmm}.txt");
+// Trace.Listeners.Add(new TextWriterTraceListener(File.CreateText(tracePath)));
+// Trace.AutoFlush = true;
 // Add services to the container.
 
 builder.Services.AddControllers();
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
