@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarvedRock.Domain", "Carved
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarvedRock.Data", "CarvedRock.Data\CarvedRock.Data.csproj", "{041DD495-44CA-48C0-BEA2-35D249DDD97E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarvedRock.WebApp", "CarvedRock.WebApp\CarvedRock.WebApp.csproj", "{02FFFED9-86BE-4E12-BA1B-E89B94B98D73}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{041DD495-44CA-48C0-BEA2-35D249DDD97E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{041DD495-44CA-48C0-BEA2-35D249DDD97E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{041DD495-44CA-48C0-BEA2-35D249DDD97E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02FFFED9-86BE-4E12-BA1B-E89B94B98D73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02FFFED9-86BE-4E12-BA1B-E89B94B98D73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02FFFED9-86BE-4E12-BA1B-E89B94B98D73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02FFFED9-86BE-4E12-BA1B-E89B94B98D73}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
