@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "cg/U/ggQA6yvHAz3rgIKt66GCGbtcLbbUjUnjJo7RW39fcpu/Ss4DNkb9XXwksmF+lW7VGRUfkDkZs9OY+R8Ew==",
+  "dgSpecHash": "kvsG61TaX0IybJ6KaIGCvOBveVy4mdt+xugwKNe91C5Xo0ftDSgcdWfXIm9XvCMb57TNB+fSR6b1POiaGGm+hA==",
   "success": true,
   "projectFilePath": "C:\\Users\\zeynels\\Desktop\\Git Project\\Logging\\CarvedRock.Api\\CarvedRock.Api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\zeynels\\.nuget\\packages\\hellang.middleware.problemdetails\\6.5.1\\hellang.middleware.problemdetails.6.5.1.nupkg.sha512",
     "C:\\Users\\zeynels\\.nuget\\packages\\microsoft.data.sqlite.core\\6.0.1\\microsoft.data.sqlite.core.6.0.1.nupkg.sha512",
     "C:\\Users\\zeynels\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.1\\microsoft.entityframeworkcore.6.0.1.nupkg.sha512",
     "C:\\Users\\zeynels\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.1\\microsoft.entityframeworkcore.abstractions.6.0.1.nupkg.sha512",
@@ -35,6 +36,7 @@
     "C:\\Users\\zeynels\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\zeynels\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "C:\\Users\\zeynels\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\zeynels\\.nuget\\packages\\system.reflection.metadata\\5.0.0\\system.reflection.metadata.5.0.0.nupkg.sha512",
     "C:\\Users\\zeynels\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\zeynels\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
     "C:\\Users\\zeynels\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512",

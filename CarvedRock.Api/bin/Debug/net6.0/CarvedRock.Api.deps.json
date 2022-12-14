@@ -10,10 +10,22 @@
         "dependencies": {
           "CarvedRock.Data": "1.0.0",
           "CarvedRock.Domain": "1.0.0",
+          "Hellang.Middleware.ProblemDetails": "6.5.1",
           "Swashbuckle.AspNetCore": "6.2.3"
         },
         "runtime": {
           "CarvedRock.Api.dll": {}
+        }
+      },
+      "Hellang.Middleware.ProblemDetails/6.5.1": {
+        "dependencies": {
+          "System.Reflection.Metadata": "5.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/Hellang.Middleware.ProblemDetails.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.0.0"
+          }
         }
       },
       "Microsoft.Data.Sqlite.Core/6.0.1": {
@@ -326,6 +338,7 @@
         }
       },
       "System.Memory/4.5.4": {},
+      "System.Reflection.Metadata/5.0.0": {},
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
       "System.Text.Encodings.Web/6.0.0": {
         "dependencies": {
@@ -363,6 +376,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Hellang.Middleware.ProblemDetails/6.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LgceF4mPguB/q3NWs6T3bitOFnYIANSRvfhASMgVb8ks7fSqY8jbdBHoVEuUDmxg3T7+kF21qSE0jQv9hdpLng==",
+      "path": "hellang.middleware.problemdetails/6.5.1",
+      "hashPath": "hellang.middleware.problemdetails.6.5.1.nupkg.sha512"
     },
     "Microsoft.Data.Sqlite.Core/6.0.1": {
       "type": "package",
@@ -580,6 +600,13 @@
       "sha512": "sha512-1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
       "path": "system.memory/4.5.4",
       "hashPath": "system.memory.4.5.4.nupkg.sha512"
+    },
+    "System.Reflection.Metadata/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5NecZgXktdGg34rh1OenY1rFNDCI8xSjFr+Z4OU4cU06AQHUdRnIIEeWENu3Wl4YowbzkymAIMvi3WyK9U53pQ==",
+      "path": "system.reflection.metadata/5.0.0",
+      "hashPath": "system.reflection.metadata.5.0.0.nupkg.sha512"
     },
     "System.Runtime.CompilerServices.Unsafe/6.0.0": {
       "type": "package",
