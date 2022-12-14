@@ -10,6 +10,10 @@ namespace CarvedRock.WebApp.Pages
     {
         public string? RequestId { get; set; }
 
+        public Activity? CurrentActivity { get; set; }
+
+        public string TraceId { get; set; }
+
         public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
 
         private readonly ILogger<ErrorModel> _logger;
@@ -22,6 +26,8 @@ namespace CarvedRock.WebApp.Pages
         public void OnGet()
         {
             RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier;
+            CurrentActivity = Activity.Current;
+            TraceId = HttpContext.TraceIdentifier;
         }
     }
 }
