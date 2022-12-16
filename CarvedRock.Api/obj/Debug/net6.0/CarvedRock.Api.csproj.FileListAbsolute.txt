@@ -59,3 +59,11 @@ C:\Users\zeynels\Desktop\Git Project\Logging\CarvedRock.Api\bin\Debug\net6.0\run
 C:\Users\zeynels\Desktop\Git Project\Logging\CarvedRock.Api\bin\Debug\net6.0\CarvedRock.Data.dll
 C:\Users\zeynels\Desktop\Git Project\Logging\CarvedRock.Api\bin\Debug\net6.0\CarvedRock.Data.pdb
 C:\Users\zeynels\Desktop\Git Project\Logging\CarvedRock.Api\bin\Debug\net6.0\Hellang.Middleware.ProblemDetails.dll
+C:\Users\zeynels\Desktop\Git Project\Logging\CarvedRock.Api\bin\Debug\net6.0\IdentityModel.dll
+C:\Users\zeynels\Desktop\Git Project\Logging\CarvedRock.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\zeynels\Desktop\Git Project\Logging\CarvedRock.Api\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\zeynels\Desktop\Git Project\Logging\CarvedRock.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\zeynels\Desktop\Git Project\Logging\CarvedRock.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\zeynels\Desktop\Git Project\Logging\CarvedRock.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\zeynels\Desktop\Git Project\Logging\CarvedRock.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\zeynels\Desktop\Git Project\Logging\CarvedRock.Api\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll

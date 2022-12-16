@@ -1,9 +1,13 @@
 using System.Diagnostics;
-using CarvedRock.Api;
+using System.IdentityModel.Tokens.Jwt;
 using CarvedRock.Data;
 using CarvedRock.Domain;
 using Hellang.Middleware.ProblemDetails;
 using Microsoft.Data.Sqlite;
+using CarvedRock.Api;
+using Microsoft.Extensions.Options;
+using Microsoft.IdentityModel.Tokens;
+using Swashbuckle.AspNetCore.SwaggerGen;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddProblemDetails(options =>
@@ -15,8 +19,19 @@ builder.Services.AddProblemDetails(options =>
         {
             details.Detail = "An error occured in our API. Use the trace id when contacting us.";
         }
+
         options.Rethrow<SqliteException>();
         options.MapToStatusCode<Exception>(StatusCodes.Status500InternalServerError);
+    };
+});
+JwtSecurityTokenHandler.DefaultMapInboundClaims = false;
+builder.Services.AddAuthentication("Bearer").AddJwtBearer("Bearer", options =>
+{
+    options.Authority = "https://demo.duendesoftware.com";
+    options.Audience = "api";
+    options.TokenValidationParameters = new TokenValidationParameters()
+    {
+        NameClaimType = "email"
     };
 });
 // builder.Logging.AddFilter("CarvedRock", LogLevel.Debug);
@@ -27,9 +42,9 @@ builder.Services.AddProblemDetails(options =>
 // Add services to the container.
 
 builder.Services.AddControllers();
-
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddTransient<IConfigureOptions<SwaggerGenOptions>, SwaggerOptions>();//Authenticate for Swagger
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IProductLogic, ProductLogic>();
@@ -41,7 +56,7 @@ var app = builder.Build();
 
 app.UseMiddleware<CriticalExceptionMiddleware>();
 app.UseProblemDetails();
-using (var scope= app.Services.CreateScope())
+using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
     var context = services.GetRequiredService<LocalContext>();
@@ -53,16 +68,23 @@ using (var scope= app.Services.CreateScope())
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(options =>
+    {
+        options.OAuthClientId("interactive.public.shprt");
+        options.OAuthAppName("CarvedRock API");
+        options.OAuthUsePkce();
+    });
 }
 
 app.MapFallback(() => Results.Redirect("/swagger"));
 
 app.UseHttpsRedirection();
+app.UseAuthentication();
+app.UseAuthorization();
 app.UseRouting();
 
 app.UseAuthorization();
 
-app.MapControllers();
+app.MapControllers().RequireAuthorization();
 
 app.Run();
