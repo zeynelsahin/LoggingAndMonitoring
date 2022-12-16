@@ -70,7 +70,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI(options =>
     {
-        options.OAuthClientId("interactive.public.shprt");
+        options.OAuthClientId("interactive.public.short");
         options.OAuthAppName("CarvedRock API");
         options.OAuthUsePkce();
     });
