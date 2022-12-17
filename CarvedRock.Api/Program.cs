@@ -80,6 +80,7 @@ app.MapFallback(() => Results.Redirect("/swagger"));
 
 app.UseHttpsRedirection();
 app.UseAuthentication();
+app.UseMiddleware<UseScopeMiddleware>();
 app.UseAuthorization();
 app.UseRouting();
 
