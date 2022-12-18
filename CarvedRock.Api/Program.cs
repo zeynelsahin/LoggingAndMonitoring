@@ -10,6 +10,9 @@ using Microsoft.IdentityModel.Tokens;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Logging.ClearProviders();
+builder.Logging.AddJsonConsole();
+builder.Logging.AddDebug();
 builder.Services.AddProblemDetails(options =>
 {
     options.IncludeExceptionDetails = (context, exception) => false;
@@ -48,14 +51,11 @@ builder.Services.AddTransient<IConfigureOptions<SwaggerGenOptions>, SwaggerOptio
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IProductLogic, ProductLogic>();
-
 builder.Services.AddDbContext<LocalContext>();
 builder.Services.AddScoped<ICarvedRockRepository, CarvedRockRepository>();
 
 var app = builder.Build();
 
-app.UseMiddleware<CriticalExceptionMiddleware>();
-app.UseProblemDetails();
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
@@ -63,8 +63,10 @@ using (var scope = app.Services.CreateScope())
     context.MigrateAndCreateData();
 }
 
+app.UseMiddleware<CriticalExceptionMiddleware>();
+app.UseProblemDetails();
 
-// Configure the HTTP request pipeline.
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -82,10 +84,6 @@ app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseMiddleware<UseScopeMiddleware>();
 app.UseAuthorization();
-app.UseRouting();
-
 app.UseAuthorization();
-
 app.MapControllers().RequireAuthorization();
-
 app.Run();
