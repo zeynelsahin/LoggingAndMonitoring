@@ -13,7 +13,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Logging.ClearProviders();
 builder.Logging.AddJsonConsole();
 builder.Logging.AddDebug();
-builder.Logging.AddApplicationInsights();
+builder.Services.AddApplicationInsightsTelemetry();
+
 builder.Services.AddProblemDetails(options =>
 {
     options.IncludeExceptionDetails = (context, exception) => false;
@@ -48,7 +49,7 @@ builder.Services.AddAuthentication("Bearer").AddJwtBearer("Bearer", options =>
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddTransient<IConfigureOptions<SwaggerGenOptions>, SwaggerOptions>();//Authenticate for Swagger
+builder.Services.AddTransient<IConfigureOptions<SwaggerGenOptions>, SwaggerOptions>(); //Authenticate for Swagger
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IProductLogic, ProductLogic>();

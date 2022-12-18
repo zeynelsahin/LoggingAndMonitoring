@@ -4,7 +4,9 @@ using CarvedRock.WebApp;
 using Microsoft.IdentityModel.Tokens;
 
 var builder = WebApplication.CreateBuilder(args);
-
+builder.Logging.ClearProviders();
+builder.Logging.AddJsonConsole();
+builder.Services.AddApplicationInsightsTelemetry();
 JwtSecurityTokenHandler.DefaultMapInboundClaims = false;
 builder.Services.AddAuthentication(options =>
     {
