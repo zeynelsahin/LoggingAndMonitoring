@@ -2,11 +2,17 @@ using Microsoft.AspNetCore.HttpLogging;
 using System.IdentityModel.Tokens.Jwt;
 using CarvedRock.WebApp;
 using Microsoft.IdentityModel.Tokens;
+using Serilog;
+using Serilog.Exceptions;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Logging.ClearProviders();
-builder.Logging.AddJsonConsole();
-builder.Services.AddApplicationInsightsTelemetry();
+// builder.Logging.AddJsonConsole();
+// builder.Services.AddApplicationInsightsTelemetry();
+builder.Host.UseSerilog((context, configuration) =>
+{
+    configuration.WriteTo.Console().Enrich.WithExceptionDetails().WriteTo.Seq("http://localhost:5341");
+});
 JwtSecurityTokenHandler.DefaultMapInboundClaims = false;
 builder.Services.AddAuthentication(options =>
     {
