@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.HttpLogging;
 using System.IdentityModel.Tokens.Jwt;
+using CarvedRock.WebApp;
 using Microsoft.IdentityModel.Tokens;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -29,14 +30,15 @@ builder.Services.AddAuthentication(options =>
         };
         options.SaveTokens = true;
     });
+
 builder.Services.AddHttpContextAccessor();
-builder.Services.AddHttpLogging(options =>
-{
-    options.LoggingFields = HttpLoggingFields.All;
-    options.MediaTypeOptions.AddText("application/json");
-    options.RequestBodyLogLimit = 4096;
-    options.RequestBodyLogLimit = 4096;
-});
+// builder.Services.AddHttpLogging(options =>
+// {
+//     options.LoggingFields = HttpLoggingFields.All;
+//     options.MediaTypeOptions.AddText("application/json");
+//     options.RequestBodyLogLimit = 4096;
+//     options.RequestBodyLogLimit = 4096;
+// });
 
 var path = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
 builder.Services.AddW3CLogging(options =>
@@ -54,7 +56,7 @@ builder.Services.AddHttpClient();
 
 var app = builder.Build();
 
-app.UseHttpLogging();
+// app.UseHttpLogging();
 app.UseW3CLogging();
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -68,6 +70,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
 app.UseAuthentication();
+app.UseMiddleware<UserScopeMiddleware>();
 app.UseAuthorization();
 app.MapRazorPages().RequireAuthorization();
 
