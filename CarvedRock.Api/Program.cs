@@ -13,6 +13,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Logging.ClearProviders();
 builder.Logging.AddJsonConsole();
 builder.Logging.AddDebug();
+builder.Logging.AddApplicationInsights();
 builder.Services.AddProblemDetails(options =>
 {
     options.IncludeExceptionDetails = (context, exception) => false;
