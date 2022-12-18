@@ -49,6 +49,18 @@
               "target": "Package",
               "version": "[6.0.12, )"
             },
+            "NLog": {
+              "target": "Package",
+              "version": "[5.1.0, )"
+            },
+            "NLog.Targets.Splunk": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "NLog.Web.AspNetCore": {
+              "target": "Package",
+              "version": "[5.2.0, )"
+            },
             "Serilog.AspNetCore": {
               "target": "Package",
               "version": "[6.1.0, )"

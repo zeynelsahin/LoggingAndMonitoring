@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "lExL3AGL1qAr9uBT/n4uNqURIX0yNYrqF/jLYzKoJZg2nLri22xP6AqgBDqHUTeSRl09Gypz3O8bJ9ybYWf9BA==",
+  "dgSpecHash": "yZmhaGq/y8IfmTIqw3VR5gHu2kGyAXAHHdOYSwScm0Y8F7YGItzPlIXjI4efzOwQfb96B51YQm6gs5G03n3Hjw==",
   "success": true,
   "projectFilePath": "C:\\Users\\zeynels\\Desktop\\Git Project\\Logging\\CarvedRock.Api\\CarvedRock.Api.csproj",
   "expectedPackageFiles": [
@@ -63,6 +63,11 @@
     "C:\\Users\\zeynels\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\zeynels\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\zeynels\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\zeynels\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\zeynels\\.nuget\\packages\\nlog\\5.1.0\\nlog.5.1.0.nupkg.sha512",
+    "C:\\Users\\zeynels\\.nuget\\packages\\nlog.extensions.logging\\5.2.0\\nlog.extensions.logging.5.2.0.nupkg.sha512",
+    "C:\\Users\\zeynels\\.nuget\\packages\\nlog.targets.splunk\\3.0.0\\nlog.targets.splunk.3.0.0.nupkg.sha512",
+    "C:\\Users\\zeynels\\.nuget\\packages\\nlog.web.aspnetcore\\5.2.0\\nlog.web.aspnetcore.5.2.0.nupkg.sha512",
     "C:\\Users\\zeynels\\.nuget\\packages\\serilog\\2.12.0\\serilog.2.12.0.nupkg.sha512",
     "C:\\Users\\zeynels\\.nuget\\packages\\serilog.aspnetcore\\6.1.0\\serilog.aspnetcore.6.1.0.nupkg.sha512",
     "C:\\Users\\zeynels\\.nuget\\packages\\serilog.exceptions\\8.4.0\\serilog.exceptions.8.4.0.nupkg.sha512",

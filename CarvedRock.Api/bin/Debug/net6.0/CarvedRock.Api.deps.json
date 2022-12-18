@@ -14,6 +14,9 @@
           "IdentityModel": "6.0.0",
           "Microsoft.ApplicationInsights.AspNetCore": "2.22.0-beta1",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.12",
+          "NLog": "5.1.0",
+          "NLog.Targets.Splunk": "3.0.0",
+          "NLog.Web.AspNetCore": "5.2.0",
           "Serilog.AspNetCore": "6.1.0",
           "Serilog.Exceptions": "8.4.0",
           "Serilog.Sinks.Seq": "5.2.3-dev-00260",
@@ -512,6 +515,58 @@
             "assetType": "runtime",
             "assemblyVersion": "4.0.2.0",
             "fileVersion": "4.700.19.56404"
+          }
+        }
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.3.23909"
+          }
+        }
+      },
+      "NLog/5.1.0": {
+        "runtime": {
+          "lib/netstandard2.0/NLog.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.1.0.1480"
+          }
+        }
+      },
+      "NLog.Extensions.Logging/5.2.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Logging": "6.0.0",
+          "NLog": "5.1.0"
+        },
+        "runtime": {
+          "lib/net6.0/NLog.Extensions.Logging.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.2.0.285"
+          }
+        }
+      },
+      "NLog.Targets.Splunk/3.0.0": {
+        "dependencies": {
+          "NLog": "5.1.0",
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "runtime": {
+          "lib/net5.0/NLog.Targets.Splunk.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
+          }
+        }
+      },
+      "NLog.Web.AspNetCore/5.2.0": {
+        "dependencies": {
+          "NLog.Extensions.Logging": "5.2.0"
+        },
+        "runtime": {
+          "lib/net6.0/NLog.Web.AspNetCore.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.2.0.694"
           }
         }
       },
@@ -1412,6 +1467,41 @@
       "sha512": "sha512-mtVirZr++rq+XCDITMUdnETD59XoeMxSpLRIII7JRI6Yj0LEDiO1pPn0ktlnIj12Ix8bfvQqQDMMIF9wC98oCA==",
       "path": "microsoft.win32.systemevents/4.7.0",
       "hashPath": "microsoft.win32.systemevents.4.7.0.nupkg.sha512"
+    },
+    "Newtonsoft.Json/12.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "path": "newtonsoft.json/12.0.3",
+      "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
+    },
+    "NLog/5.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oW7ekrkRG9okpDMUcEglunWj8Qf2RY8qkgl+/chJoavzg3dbT13y32t19R54FKkmq80fKzw4ZekZkCrRGanKgQ==",
+      "path": "nlog/5.1.0",
+      "hashPath": "nlog.5.1.0.nupkg.sha512"
+    },
+    "NLog.Extensions.Logging/5.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wzVFG5p8Nwbs1Ws29T8YJg+UbJfsh61h6U4xArnDSrtVvOoccwKtoFPZWwbym3ZTiTFmHIf7Ugu1j/WnT7z3vg==",
+      "path": "nlog.extensions.logging/5.2.0",
+      "hashPath": "nlog.extensions.logging.5.2.0.nupkg.sha512"
+    },
+    "NLog.Targets.Splunk/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9R72aE1JKdJaZkSFPbEOfHCytth4FFYzyJ0IZHdIh44mB6AesnJv3OXKnQQJ4A5BOnhLDptlK/aAdeRxRYaobw==",
+      "path": "nlog.targets.splunk/3.0.0",
+      "hashPath": "nlog.targets.splunk.3.0.0.nupkg.sha512"
+    },
+    "NLog.Web.AspNetCore/5.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DqFgdydAWW+pshPdzh0ydk2jJrrVaZmBNz5+p9K8N9q/4BOPJ94S2fD8t9erd7ZMhnigaqOq/HqZH4nGGOYTbA==",
+      "path": "nlog.web.aspnetcore/5.2.0",
+      "hashPath": "nlog.web.aspnetcore.5.2.0.nupkg.sha512"
     },
     "Serilog/2.12.0": {
       "type": "package",
