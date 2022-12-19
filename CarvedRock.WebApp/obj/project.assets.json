@@ -731,25 +731,6 @@
           }
         }
       },
-      "Microsoft.Extensions.Options.ConfigurationExtensions/2.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Configuration.Abstractions": "2.0.0",
-          "Microsoft.Extensions.Configuration.Binder": "2.0.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0",
-          "Microsoft.Extensions.Options": "2.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "Microsoft.Extensions.Primitives/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -1120,11 +1101,11 @@
           }
         }
       },
-      "Serilog.Settings.Configuration/3.3.0": {
+      "Serilog.Settings.Configuration/3.5.0-dev-00359": {
         "type": "package",
         "dependencies": {
+          "Microsoft.Extensions.Configuration.Binder": "2.0.0",
           "Microsoft.Extensions.DependencyModel": "3.0.0",
-          "Microsoft.Extensions.Options.ConfigurationExtensions": "2.0.0",
           "Serilog": "2.10.0"
         },
         "compile": {
@@ -2512,19 +2493,6 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.Options.ConfigurationExtensions/2.0.0": {
-      "sha512": "Y/lGICwO27fCkQRK3tZseVzFjZaxfGmui990E67sB4MuiPzdJHnJDS/BeYWrHShSSBgCl4KyKRx4ux686fftPg==",
-      "type": "package",
-      "path": "microsoft.extensions.options.configurationextensions/2.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard2.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll",
-        "lib/netstandard2.0/Microsoft.Extensions.Options.ConfigurationExtensions.xml",
-        "microsoft.extensions.options.configurationextensions.2.0.0.nupkg.sha512",
-        "microsoft.extensions.options.configurationextensions.nuspec"
-      ]
-    },
     "Microsoft.Extensions.Primitives/6.0.0": {
       "sha512": "9+PnzmQFfEFNR9J2aDTfJGGupShHjOuGw4VUv+JB044biSHrnmCIMD+mJHmb2H7YryrfBEXDurxQ47gJZdCKNQ==",
       "type": "package",
@@ -3018,10 +2986,10 @@
         "serilog.formatting.compact.nuspec"
       ]
     },
-    "Serilog.Settings.Configuration/3.3.0": {
-      "sha512": "7GNudISZwqaT902hqEL2OFGTZeUFWfnrNLupJkOqeF41AR3GjcxX+Hwb30xb8gG2/CDXsCMVfF8o0+8KY0fJNg==",
+    "Serilog.Settings.Configuration/3.5.0-dev-00359": {
+      "sha512": "7VIs+5avyiOKzOi7MBcxfy8qUD3Qk8ejRcl3BwHidhHcd4sqhRXYKdWXH1nNAA4yQoLC52EyFjtQpIpW/60NZw==",
       "type": "package",
-      "path": "serilog.settings.configuration/3.3.0",
+      "path": "serilog.settings.configuration/3.5.0-dev-00359",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3032,7 +3000,7 @@
         "lib/net461/Serilog.Settings.Configuration.xml",
         "lib/netstandard2.0/Serilog.Settings.Configuration.dll",
         "lib/netstandard2.0/Serilog.Settings.Configuration.xml",
-        "serilog.settings.configuration.3.3.0.nupkg.sha512",
+        "serilog.settings.configuration.3.5.0-dev-00359.nupkg.sha512",
         "serilog.settings.configuration.nuspec"
       ]
     },
@@ -4731,6 +4699,7 @@
       "NLog.Web.AspNetCore >= 5.2.0",
       "Serilog.AspNetCore >= 6.1.0",
       "Serilog.Exceptions >= 8.4.0",
+      "Serilog.Settings.Configuration >= 3.5.0-dev-00359",
       "Serilog.Sinks.Seq >= 5.2.3-dev-00260"
     ]
   },
@@ -4805,6 +4774,10 @@
           "Serilog.Exceptions": {
             "target": "Package",
             "version": "[8.4.0, )"
+          },
+          "Serilog.Settings.Configuration": {
+            "target": "Package",
+            "version": "[3.5.0-dev-00359, )"
           },
           "Serilog.Sinks.Seq": {
             "target": "Package",

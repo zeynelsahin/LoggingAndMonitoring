@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "eoBAV3W5fU0UI7mqUzBtqkpuEsswcE9XTN4GcvYYcCmqCXVtNI/2pqxP1/p7elzVx2knv6xTqaBBc+dT9ww5+Q==",
+  "dgSpecHash": "uuWkB48lySSchMlFc5uGxX07vl3Sky9jX+/m/QjHM4MUFEnum91mKlUVvYrUr5gqH+0c21RpJ9x7EoSclwyAYg==",
   "success": true,
   "projectFilePath": "C:\\Users\\zeynels\\Desktop\\Git Project\\Logging\\CarvedRock.WebApp\\CarvedRock.WebApp.csproj",
   "expectedPackageFiles": [
@@ -45,7 +45,6 @@
     "C:\\Users\\zeynels\\.nuget\\packages\\microsoft.extensions.logging.applicationinsights\\2.22.0-beta1\\microsoft.extensions.logging.applicationinsights.2.22.0-beta1.nupkg.sha512",
     "C:\\Users\\zeynels\\.nuget\\packages\\microsoft.extensions.objectpool\\2.1.1\\microsoft.extensions.objectpool.2.1.1.nupkg.sha512",
     "C:\\Users\\zeynels\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
-    "C:\\Users\\zeynels\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\2.0.0\\microsoft.extensions.options.configurationextensions.2.0.0.nupkg.sha512",
     "C:\\Users\\zeynels\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "C:\\Users\\zeynels\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.10.0\\microsoft.identitymodel.jsonwebtokens.6.10.0.nupkg.sha512",
     "C:\\Users\\zeynels\\.nuget\\packages\\microsoft.identitymodel.logging\\6.10.0\\microsoft.identitymodel.logging.6.10.0.nupkg.sha512",
@@ -68,7 +67,7 @@
     "C:\\Users\\zeynels\\.nuget\\packages\\serilog.extensions.hosting\\5.0.1\\serilog.extensions.hosting.5.0.1.nupkg.sha512",
     "C:\\Users\\zeynels\\.nuget\\packages\\serilog.extensions.logging\\3.1.0\\serilog.extensions.logging.3.1.0.nupkg.sha512",
     "C:\\Users\\zeynels\\.nuget\\packages\\serilog.formatting.compact\\1.1.0\\serilog.formatting.compact.1.1.0.nupkg.sha512",
-    "C:\\Users\\zeynels\\.nuget\\packages\\serilog.settings.configuration\\3.3.0\\serilog.settings.configuration.3.3.0.nupkg.sha512",
+    "C:\\Users\\zeynels\\.nuget\\packages\\serilog.settings.configuration\\3.5.0-dev-00359\\serilog.settings.configuration.3.5.0-dev-00359.nupkg.sha512",
     "C:\\Users\\zeynels\\.nuget\\packages\\serilog.sinks.console\\4.0.1\\serilog.sinks.console.4.0.1.nupkg.sha512",
     "C:\\Users\\zeynels\\.nuget\\packages\\serilog.sinks.debug\\2.0.0\\serilog.sinks.debug.2.0.0.nupkg.sha512",
     "C:\\Users\\zeynels\\.nuget\\packages\\serilog.sinks.file\\5.0.0\\serilog.sinks.file.5.0.0.nupkg.sha512",

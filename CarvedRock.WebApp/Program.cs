@@ -12,10 +12,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Logging.ClearProviders();
 // builder.Logging.AddJsonConsole();
 // builder.Services.AddApplicationInsightsTelemetry();
-// builder.Host.UseSerilog((context, configuration) =>
-// {
-//     configuration.WriteTo.Console().Enrich.WithExceptionDetails().WriteTo.Seq("http://localhost:5341");
-// });
+builder.Host.UseSerilog((context, configuration) =>
+{
+    configuration.ReadFrom.Configuration(context.Configuration).WriteTo.Console().Enrich.WithExceptionDetails().WriteTo.Seq("http://localhost:5341");
+});     
 NLog.LogManager.Setup().LoadConfigurationFromFile();
 builder.Host.UseNLog();
 JwtSecurityTokenHandler.DefaultMapInboundClaims = false;

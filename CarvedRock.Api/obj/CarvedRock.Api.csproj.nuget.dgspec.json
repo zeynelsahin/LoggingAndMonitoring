@@ -88,6 +88,10 @@
               "target": "Package",
               "version": "[8.4.0, )"
             },
+            "Serilog.Settings.Configuration": {
+              "target": "Package",
+              "version": "[3.5.0-dev-00359, )"
+            },
             "Serilog.Sinks.Seq": {
               "target": "Package",
               "version": "[5.2.3-dev-00260, )"
