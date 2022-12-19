@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.HttpLogging;
 using System.IdentityModel.Tokens.Jwt;
 using CarvedRock.WebApp;
+using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.IdentityModel.Tokens;
 using NLog;
 using NLog.Web;
@@ -41,10 +42,10 @@ builder.Services.AddAuthentication(options =>
             NameClaimType = "email"
         };
         options.SaveTokens = true;
-    });
+    }); 
 
 builder.Services.AddHttpContextAccessor();
-builder.Services.AddHealthChecks();
+builder.Services.AddHealthChecks().AddIdentityServer(new Uri("https://demo.duendesoftware.com"),failureStatus:HealthStatus.Degraded);
 // builder.Services.AddHttpLogging(options =>
 // {
 //     options.LoggingFields = HttpLoggingFields.All;
