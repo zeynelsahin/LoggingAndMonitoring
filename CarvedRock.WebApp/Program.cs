@@ -44,6 +44,7 @@ builder.Services.AddAuthentication(options =>
     });
 
 builder.Services.AddHttpContextAccessor();
+builder.Services.AddHealthChecks();
 // builder.Services.AddHttpLogging(options =>
 // {
 //     options.LoggingFields = HttpLoggingFields.All;
@@ -71,12 +72,9 @@ var app = builder.Build();
 // app.UseHttpLogging();
 app.UseW3CLogging();
 // Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
-{
-    app.UseExceptionHandler("/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
-}
+app.UseExceptionHandler("/Error");
+// The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+app.UseHsts();
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
@@ -85,5 +83,5 @@ app.UseAuthentication();
 app.UseMiddleware<UserScopeMiddleware>();
 app.UseAuthorization();
 app.MapRazorPages().RequireAuthorization();
-
+app.MapHealthChecks("health").AllowAnonymous();
 app.Run();
