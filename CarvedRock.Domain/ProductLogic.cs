@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using CarvedRock.Data;
 using CarvedRock.Data.Entities;
 using CarvedRock.Domain.Models;
@@ -19,8 +20,10 @@ public class ProductLogic : IProductLogic
     public async Task<IEnumerable<Product>> GetProductsForCategoryAsync(string category)
     {
         _logger.LogInformation("Getting products in logic for {category}", category);
-
-        return await _repository.GetProductsAsync(category);
+        Activity.Current?.AddEvent(new ActivityEvent("Getting products from repository"));
+        var result = await _repository.GetProductsAsync(category);
+        Activity.Current?.AddEvent(new ActivityEvent("Retrieved products from repository"));
+        return result;
     }
 
     public async Task<Product?> GetProductByIdAsync(int id)

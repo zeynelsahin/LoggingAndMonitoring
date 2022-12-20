@@ -9,6 +9,9 @@ using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using NLog;
 using NLog.Web;
+using OpenTelemetry;
+using OpenTelemetry.Resources;
+using OpenTelemetry.Trace;
 using Serilog;
 using Serilog.Enrichers.Span;
 using Serilog.Exceptions;
@@ -24,7 +27,11 @@ builder.Host.UseSerilog((context, configuration) =>
 {
     configuration.ReadFrom.Configuration(context.Configuration).WriteTo.Console().Enrich.WithExceptionDetails().Enrich.FromLogContext().Enrich.With<ActivityEnricher>().WriteTo.Seq("http://localhost:5341");
 });
-NLog.LogManager.Setup().LoadConfigurationFromFile();
+builder.Services.AddOpenTelemetry().WithTracing(providerBuilder =>
+{
+    providerBuilder.SetResourceBuilder(ResourceBuilder.CreateDefault().AddService(builder.Environment.ApplicationName)).AddAspNetCoreInstrumentation().AddEntityFrameworkCoreInstrumentation().AddOtlpExporter(builder=>builder.Endpoint= new Uri("http://localhost4317"));
+});
+// NLog.LogManager.Setup().LoadConfigurationFromFile();
 builder.Host.UseNLog();
 builder.Services.AddProblemDetails(options =>
 {
