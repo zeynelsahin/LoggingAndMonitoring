@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "KZVbyziwu4TdUafr1pHxMcB91uvauZiwvAOepftd2IFQ0Y1VfWiPMRFaSQV1Tq0GeJa35yu+gtVVeGUAYOtiRQ==",
+  "dgSpecHash": "fwnZYB6ThT5hnVSO9zyq5m2MGR3LDH49j3XM+LymujLueKDSoQ1yHwZABV7UhKHoI7y5h5fakrRboRHiSfsJzw==",
   "success": true,
   "projectFilePath": "C:\\Users\\zeynels\\Desktop\\Git Project\\Logging\\CarvedRock.Api\\CarvedRock.Api.csproj",
   "expectedPackageFiles": [
@@ -72,6 +72,7 @@
     "C:\\Users\\zeynels\\.nuget\\packages\\nlog.web.aspnetcore\\5.2.0\\nlog.web.aspnetcore.5.2.0.nupkg.sha512",
     "C:\\Users\\zeynels\\.nuget\\packages\\serilog\\2.12.0\\serilog.2.12.0.nupkg.sha512",
     "C:\\Users\\zeynels\\.nuget\\packages\\serilog.aspnetcore\\6.1.0\\serilog.aspnetcore.6.1.0.nupkg.sha512",
+    "C:\\Users\\zeynels\\.nuget\\packages\\serilog.enrichers.span\\3.0.0\\serilog.enrichers.span.3.0.0.nupkg.sha512",
     "C:\\Users\\zeynels\\.nuget\\packages\\serilog.exceptions\\8.4.0\\serilog.exceptions.8.4.0.nupkg.sha512",
     "C:\\Users\\zeynels\\.nuget\\packages\\serilog.extensions.hosting\\5.0.1\\serilog.extensions.hosting.5.0.1.nupkg.sha512",
     "C:\\Users\\zeynels\\.nuget\\packages\\serilog.extensions.logging\\3.1.0\\serilog.extensions.logging.3.1.0.nupkg.sha512",
@@ -93,7 +94,7 @@
     "C:\\Users\\zeynels\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\zeynels\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\zeynels\\.nuget\\packages\\system.configuration.configurationmanager\\4.7.0\\system.configuration.configurationmanager.4.7.0.nupkg.sha512",
-    "C:\\Users\\zeynels\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
+    "C:\\Users\\zeynels\\.nuget\\packages\\system.diagnostics.diagnosticsource\\7.0.0\\system.diagnostics.diagnosticsource.7.0.0.nupkg.sha512",
     "C:\\Users\\zeynels\\.nuget\\packages\\system.diagnostics.performancecounter\\4.7.0\\system.diagnostics.performancecounter.4.7.0.nupkg.sha512",
     "C:\\Users\\zeynels\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
     "C:\\Users\\zeynels\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.10.0\\system.identitymodel.tokens.jwt.6.10.0.nupkg.sha512",
